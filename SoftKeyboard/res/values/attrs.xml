@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PunctuationView">
+		<attr name="buttonHeight" format="dimension"></attr>
+		<attr name="buttonWidth" format="dimension"></attr>
+		<attr name="buttonBackground" format="reference"></attr>
+		<attr name="buttonTextSize" format="dimension"></attr>
+	</declare-styleable>
+	<declare-styleable name="EditView">
+		<attr name="textColor" format="color"></attr>
+		<attr name="textSize" format="dimension"></attr>
+		<attr name="completeForm" format="boolean"></attr>
+	</declare-styleable>
+	<declare-styleable name="WritingView">
+		<attr name="charStrokeWidth" format="dimension"></attr>
+		<attr name="charColor" format="color"></attr>
+		<attr name="switchingResponseAreaHeight" format="dimension"></attr>
+		<attr name="switchingResponseAreaWidth" format="dimension"></attr>
+	</declare-styleable>
+    
+</resources>

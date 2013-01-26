@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.example.android.softkeyboard">
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+	        
+	        <com.example.android.softkeyboard.PunctuationView
+	            xmlns:app="http://schemas.android.com/apk/res/com.example.android.softkeyboard"
+	            android:id="@+id/punctuationview"
+	            android:layout_width="40dp"
+	            android:layout_height="180dp"
+	            app:buttonHeight="40dp"
+	            app:buttonWidth="40dp"
+	            app:buttonTextSize="20sp"/>    
+	            
+			<com.example.android.softkeyboard.WritingView
+			    xmlns:app="http://schemas.android.com/apk/res/com.example.android.softkeyboard"
+			    android:id="@+id/writingview"
+			    android:layout_width="fill_parent"
+			    android:layout_height="180dp" 
+			    app:charStrokeWidth="8dp"
+			    app:charColor="#ff86abd9"
+			  	app:switchingResponseAreaHeight="40dp"
+			  	app:switchingResponseAreaWidth="40dp"
+			     />
+		</LinearLayout>
+  		<com.example.android.softkeyboard.EditView
+		    xmlns:app="http://schemas.android.com/apk/res/com.example.android.softkeyboard"
+		    android:id="@+id/editview"
+		    android:layout_width="fill_parent"
+		    android:layout_height="180dp"
+		    app:switchingResponseAreaHeight="40dp"
+			app:switchingResponseAreaWidth="40dp"
+		    app:completeForm="true"/>
+		<!-- <TextView 
+		     android:layout_width="fill_parent"
+		     android:layout_height="180dp"
+		     android:text="hallelujar"/> -->
+	</ViewFlipper>
+	<com.example.android.softkeyboard.LatinKeyboardView
+        android:id="@+id/keyboard"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+
+</LinearLayout>
